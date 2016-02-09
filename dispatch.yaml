@@ -1,0 +1,8 @@
+application: gopandemus
+
+dispatch:
+  - url: "*/api/*"
+    module: default
+
+  - url: "*/*"
+    module: frontend

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="pandemus" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pandemus</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="app.css"> -->
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="menu">
+    <ul>
+      <li><a href="console">Console</a>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div ng-view></div>
+  </div>
+
+  <!-- <div>Pandemus: v<span app-version></span></div> -->
+
+  <!-- In production use: 1.5.0 -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js" ></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.min.js" ></script>
+  <!-- <script src="lib/angular.min.js"></script> -->
+
+  <script src="/Components/Services/backend.js" ></script>
+  <script src="/Components/Board/board-state.js" ></script>
+  <script src="/ConsoleView/console-view.js" ></script>
+  <script src="/app.js" ></script>
+
+
+</body>
+</html>

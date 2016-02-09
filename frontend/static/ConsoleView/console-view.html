@@ -1,0 +1,9 @@
+<div class="console">
+  <board-state state=board></board-state>
+  <div class="console-output" ng-repeat="cmd in history track by $index">
+    [{{$index}}] {{cmd}}
+  </div>
+  <div class="command-input">
+    <input type="text" id="txtCommand" ng-model="commandText" ng-keyup="processCommand($event)" > </input>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="board-state">
+  <span ng-if="state.committed">
+    Commited
+  </span>
+  <span ng-if="!state.committed">
+    Un-committed
+  </span>
+  <br/>
+  Last Modified: {{state.data.LastModified}}
+  <hr/>
+  <div class="players-state" ng-repeat="(name, p) in state.data.Players">
+    <div class="player-state-bucket">
+      Name: {{name}}<br/>
+      Location: {{p.Location}}<br/>
+      Hand: {{p.Hand}}<br/>
+    </div>
+    <hr/>
+  </div>
+  <div>
+    Infected Cities:
+    {{state.data.InfectedCities}}
+  </div>
+</div>
